@@ -349,7 +349,6 @@ def draw_menu():
     screen.draw.text("Exit", center=exit_button.center, color="white")
 
 def draw_game():
-    screen.draw.text("Game running... (sprites virão depois)", topleft=(10, 10), color="white")
     for enemy in enemies:
         enemy.draw()
     screen.draw.text(f"Lives: {hero.lives}", topleft=(10, 40), fontsize=30, color="red")
